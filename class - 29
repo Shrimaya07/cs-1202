@@ -1,0 +1,233 @@
+1. Introduction to Project Sprint
+A Project Sprint is a short, structured development period in which a team or individual works on building a functional project within a specific time.
+
+Project Sprint I – Build focuses on converting an idea into a working Python application using programming concepts learned earlier.
+
+The main objective is to develop a basic but functional project.
+
+2. Objectives of Project Sprint I
+Understand real-world problems.
+
+Develop logical thinking and problem-solving skills.
+
+Apply Python programming concepts practically.
+
+Learn to write and execute Python programs.
+
+Develop a working project.
+
+Identify and correct programming errors.
+
+3. Steps Involved in Project Development
+Problem Identification
+Identify a real-world problem that can be solved using Python.
+
+Planning
+Decide the project's objectives, features and requirements.
+
+Designing
+Prepare the algorithm, flowchart and program structure.
+
+Coding
+Write the Python program using appropriate functions, variables, loops and conditions.
+
+Testing
+Execute the program and check whether it produces the expected output.
+
+Debugging
+Identify and correct errors in the program.
+
+Final Implementation
+Run the completed project and verify its functionality.
+
+4. Important Python Concepts Used in Project Building
+4.1 Variables
+Variables are used to store data values in a program.
+
+project_name = "Student Management"total_students = 50print(project_name)print(total_students)
+
+4.2 Conditional Statements
+Conditional statements execute different blocks of code depending on a condition.
+
+marks = 75if marks >= 40:    print("Pass")else:    print("Fail")
+
+4.3 Loops
+Loops are used to execute a block of code repeatedly.
+
+Example:
+
+for i in range(1, 6):    print(i)
+
+4.4 Functions
+Functions are reusable blocks of code designed to perform specific tasks.
+
+def add(a, b):    return a + bprint(add(10, 20))
+
+4.5 Lists
+Lists store multiple values in a single variable.
+
+students = ["Amit", "Rahul", "Rohit"]for name in students:    print(name)
+
+4.6 File Handling
+File handling allows a Python program to create, read and write files.
+
+file = open("data.txt", "w")file.write("Welcome to Python Project")file.close()
+
+5. Example of a Mini Project
+Student Marks Management System
+Objective: To create a simple Python application that stores student names and calculates their total and average marks.
+
+Program:
+
+name = input("Enter student name: ")m1 = int(input("Enter marks in Subject 1: "))m2 = int(input("Enter marks in Subject 2: "))m3 = int(input("Enter marks in Subject 3: "))total = m1 + m2 + m3average = total / 3print("\n--- Student Report ---")print("Name:", name)print("Total Marks:", total)print("Average:", average)if average >= 40:    print("Result: Pass")else:    print("Result: Fail")
+
+Sample Output:
+
+Enter student name: Rahul
+
+Enter marks in Subject 1: 80
+
+Enter marks in Subject 2: 75
+
+Enter marks in Subject 3: 85
+
+
+--- Student Report ---
+
+Name: Rahul
+
+Total Marks: 240
+
+Average: 80.0
+
+Result: Pass
+
+6. Types of Python Projects
+Some examples of beginner-level Python projects are:
+
+Project
+
+Purpose
+
+Calculator
+
+Performs mathematical operations
+
+Student Management System
+
+Stores student records
+
+Attendance System
+
+Maintains attendance records
+
+Inventory Management
+
+Tracks available stock
+
+Expense Tracker
+
+Records daily expenses
+
+Quiz Application
+
+Conducts quizzes and calculates scores
+
+Production Calculator
+
+Calculates production rate and efficiency
+
+7. Testing and Debugging
+Testing: Testing is the process of checking whether a program works correctly and produces the expected output.
+
+Debugging: Debugging is the process of identifying and correcting errors in a program.
+
+Common Types of Errors
+Syntax Error: Occurs when Python syntax rules are violated.
+
+Runtime Error: Occurs while the program is executing.
+
+Logical Error: Occurs when the program runs but produces an incorrect result.
+
+Example of a syntax error:
+
+if 10 > 5    print("Greater")
+
+Correct program:
+
+if 10 > 5:    print("Greater")
+
+8. Advantages of Project-Based Learning
+Improves practical programming knowledge.
+
+Develops creativity and innovation.
+
+Improves problem-solving ability.
+
+Builds confidence in coding.
+
+Provides experience in developing real-world applications.
+
+Encourages teamwork and time management.
+
+9. Important Questions for Examination
+2-Mark Questions
+
+What is a project sprint?
+
+Define project development.
+
+What is debugging?
+
+What is software testing?
+
+What is the role of an algorithm in project development?
+
+Mention any four applications of Python projects.
+
+5-Mark Questions
+
+Explain the different stages of project development.
+
+Discuss the objectives and advantages of Project Sprint.
+
+Explain the role of Python programming concepts in project building.
+
+Differentiate between testing and debugging.
+
+Develop a simple Python application using functions and conditional statements.
+
+10. Quick Revision
+Term
+
+Meaning
+
+Project Sprint
+
+Short-duration development activity
+
+Planning
+
+Defining project requirements
+
+Algorithm
+
+Step-by-step solution to a problem
+
+Coding
+
+Writing program instructions
+
+Testing
+
+Checking program functionality
+
+Debugging
+
+Correcting programming errors
+
+Implementation
+
+Putting the completed project into use
+
+Conclusion: Project Sprint I – Build helps students apply theoretical Python knowledge to practical problems by following the stages of planning, designing, coding, testing and implementation. It develops programming skills and prepares students to build real-world applications.
