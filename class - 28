@@ -1,0 +1,329 @@
+1. Directories in Python
+1.1 What is a Directory?
+A directory is a folder used to store and organize files and other directories on a computer.
+Python provides the os module to create, access, manage and manipulate directories.
+
+Example:
+Python/
+│
+├── notes.txt
+├── program.py
+│
+└── Projects
+    ├── project1.py
+    └── project2.py1.3 Important Directory Functions
+
+Function
+Description
+os.getcwd()
+Returns the current working directory
+os.chdir(path)
+Changes the current directory
+
+os.mkdir(path)
+
+Creates a new directory
+
+os.makedirs(path)
+
+Creates multiple nested directories
+
+os.listdir(path)
+
+Lists files and folders
+
+os.rmdir(path)
+
+Removes an empty directory
+
+os.removedirs(path)
+
+Removes empty nested directories
+
+os.rename(old, new)
+
+Renames a file or directory
+
+1.4 Getting Current Working Directory
+The os.getcwd() function returns the location of the current working directory.
+
+Program:
+
+import osprint(os.getcwd())
+
+Output:
+
+C:\Users\Student\Python
+
+1.5 Changing the Working Directory
+The os.chdir() function changes the current working directory.
+
+Program:
+
+import osos.chdir("C:\\Users\\Student\\Documents")print(os.getcwd())
+
+Output:
+
+C:\Users\Student\Documents
+
+1.6 Creating a Directory
+The os.mkdir() function creates a new directory.
+
+Program:
+
+import osos.mkdir("MyFolder")print("Directory created successfully")
+
+Output:
+
+Directory created successfully
+
+1.7 Creating Nested Directories
+The os.makedirs() function creates multiple directories at once, including parent directories.
+
+Program:
+
+import osos.makedirs("College/Python/Notes")print("Directories created")
+
+This creates the following structure:
+
+College/
+
+    Python/
+
+        Notes/
+
+1.8 Listing Files and Directories
+The os.listdir() function displays all files and folders present inside a specified directory.
+
+Program:
+
+import osfiles = os.listdir(".")print(files)
+
+Output:
+
+['notes.txt', 'program.py', 'Projects']
+
+Here, . represents the current working directory.
+
+1.9 Removing a Directory
+The os.rmdir() function removes an empty directory.
+
+Program:
+
+import osos.rmdir("MyFolder")print("Directory removed")
+
+Note: os.rmdir() cannot remove a non-empty directory.
+
+1.10 Renaming a Directory
+The os.rename() function is used to rename an existing directory.
+
+Program:
+
+import osos.rename("OldFolder", "NewFolder")print("Directory renamed")
+
+2. Batch Jobs in Python
+2.1 What is a Batch Job?
+A batch job is a process in which a group of tasks or programs is executed automatically without requiring continuous user interaction.
+
+Batch processing is useful when a large number of similar operations need to be performed together.
+
+Examples:
+
+Processing multiple student records.
+
+Generating monthly salary reports.
+
+Calculating employee attendance.
+
+Processing multiple files.
+
+Generating daily production reports.
+
+2.2 Features of Batch Processing
+Executes multiple tasks automatically.
+
+Requires minimum user interaction.
+
+Saves time and manual effort.
+
+Suitable for repetitive operations.
+
+Can process large amounts of data.
+
+2.3 Batch Jobs Using Python
+Python can execute batch jobs using loops, functions, scripts and modules.
+
+Example: Processing Multiple Numbers
+
+numbers = [10, 20, 30, 40, 50]for n in numbers:    print("Square of", n, "=", n*n)
+
+Output:
+
+Square of 10 = 100
+
+Square of 20 = 400
+
+Square of 30 = 900
+
+Square of 40 = 1600
+
+Square of 50 = 2500
+
+Here, Python automatically processes all the numbers without requiring separate instructions for each number.
+
+2.4 Batch Processing Multiple Files
+Python can process multiple files stored inside a directory.
+
+Program:
+
+import osfolder = "MyFolder"for file in os.listdir(folder):    print("Processing:", file)
+
+Output:
+
+Processing: file1.txt
+
+Processing: file2.txt
+
+Processing: file3.txt
+
+2.5 Batch Jobs Using Functions
+Functions can be used to perform repetitive tasks automatically.
+
+Program:
+
+def calculate_square(numbers):    for n in numbers:        print(n*n)data = [2, 4, 6, 8, 10]calculate_square(data)
+
+Output:
+
+4
+
+16
+
+36
+
+64
+
+100
+
+2.6 Advantages of Batch Jobs
+Reduces manual work.
+
+Improves efficiency and productivity.
+
+Saves processing time.
+
+Reduces repetitive human errors.
+
+Useful for large-scale data processing.
+
+2.7 Applications of Batch Jobs in Production Engineering
+Batch processing is useful in industries for:
+
+Production Reports: Generating daily production reports.
+
+Inventory Management: Updating stock records in bulk.
+
+Quality Control: Processing multiple inspection records.
+
+Attendance Management: Calculating employee attendance.
+
+Cost Calculation: Calculating the total production cost of multiple products.
+
+3. Difference Between Directories and Batch Jobs
+Directories
+
+Batch Jobs
+
+Used to organize files and folders.
+
+Used to execute multiple tasks automatically.
+
+Related to file management.
+
+Related to task automation.
+
+Managed using the os module.
+
+Implemented using scripts, loops and functions.
+
+Example: Creating a folder.
+
+Example: Processing 100 records.
+
+4. Important Questions for Examination
+Important
+
+2-Mark Questions
+What is a directory?
+
+What is the use of the os module?
+
+What is the purpose of os.getcwd()?
+
+Differentiate between os.mkdir() and os.makedirs().
+
+What is a batch job?
+
+Mention any four advantages of batch processing.
+
+What is the use of os.listdir()?
+
+What is the difference between os.rmdir() and os.removedirs()?
+
+5-Mark Questions
+Explain any five directory handling functions in Python with examples.
+
+Explain batch processing and its applications.
+
+Write a Python program to create, list and remove a directory.
+
+Explain how Python can process multiple files using batch processing.
+
+5. Quick Revision Sheet
+Concept
+
+Syntax
+
+Import OS
+
+import os
+
+Current directory
+
+os.getcwd()
+
+Change directory
+
+os.chdir("path")
+
+Create directory
+
+os.mkdir("folder")
+
+Create nested directory
+
+os.makedirs("A/B")
+
+List directory
+
+os.listdir()
+
+Remove directory
+
+os.rmdir("folder")
+
+Rename directory
+
+os.rename("old", "new")
+
+Remember:
+
+Directory = Organizing files and folders.
+
+Batch Job = Executing multiple tasks automatically.
+
+os module = Operating system interaction.
+
+os.mkdir() = Creates one directory.
+
+os.makedirs() = Creates nested directories.
